@@ -234,3 +234,9 @@ footer {
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+     /* dark styles here */
+   }
+}
