@@ -1,0 +1,144 @@
+/* Aca hago las importaciones */
+/* FUENTES */
+@font-face {
+  font-family: texasBold;
+  src: url("../assets/fonts/texasBold.otf"); }
+
+/* ***************** */
+/* GENERALES */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  color: black;
+  background-color: #edf4f2; }
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  background-color: #edf4f2; }
+  body h1 {
+    font-family: texasBold;
+    font-size: 4rem;
+    border-bottom: 0.1em solid #F79F1F;
+    border-top: 0.1em solid #F79F1F; }
+  body h2 {
+    font-family: texasBold;
+    font-size: 3rem;
+    margin: 0.5em 0 0.5em 0;
+    color: #6e6363; }
+  body div div .card {
+    margin: 1em 0 0 1.5em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+/* ***************** */
+/* HEADER Y NAV */
+header {
+  display: flex;
+  align-items: center;
+  height: 15em;
+  background-color: #edf4f2; }
+
+header img {
+  /* aca irian los margenes de la imagen-logo */
+  width: 12em;
+  margin-left: 10em; }
+
+.botonera {
+  width: auto;
+  height: 2.5em;
+  margin-left: auto;
+  padding-left: 0;
+  margin-right: 6em;
+  color: black; }
+  .botonera ul {
+    list-style: none;
+    display: flex;
+    background-color: #F79F1F;
+    border-radius: 15em; }
+    .botonera ul li {
+      width: 10em;
+      height: 2.5em;
+      line-height: 2.5em;
+      text-align: center;
+      cursor: pointer; }
+      .botonera ul li a {
+        text-decoration: none;
+        color: black; }
+
+.botonera ul li:first-child:hover {
+  background-color: green;
+  border-radius: 15em; }
+
+.botonera ul li:nth-child(2):hover {
+  background-color: white;
+  border-radius: 15em; }
+
+.botonera ul li:last-child:hover {
+  background-color: red;
+  border-radius: 15em; }
+
+/* SEPARADORES */
+main {
+  text-align: center; }
+
+.list-group-item {
+  background-color: #edf4f2; }
+
+.taquiza {
+  font-style: italic; }
+
+footer {
+  background-color: lightgray;
+  margin: 2em 0 0 0; }
+  footer div i a img {
+    width: 2em; }
+
+/* ***************** */
+/* Whatsapp API */
+.whatsappLaTaquizaDeliver {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 0.5em; }
+  .whatsappLaTaquizaDeliver i a img {
+    width: 4em; }
+
+/* ***************** */
+.card-vacia {
+  background-color: lightgray;
+  color: lightgray; }
+  .card-vacia .card-body .card-title {
+    color: lightgray; }
+
+.card-title {
+  color: #7c189d; }
+
+@media (max-width: 360px) {
+  html body {
+    margin: 0;
+    padding: 0; }
+    html body .botonera {
+      visibility: hidden; }
+    html body .logo {
+      width: 80%; }
+    html body .whatsappLaTaquizaDeliver i a img {
+      width: 4rem; }
+    html body .card {
+      margin: 0; }
+      html body .card .card-img-top {
+        margin: 0; } }
+
+@media (max-width: 768px) {
+  html h1 {
+    font-size: 2rem; }
+  html h2 {
+    font-size: 1.5rem; }
+  html iframe {
+    width: 100%; }
+  html .alcance {
+    width: 80%; }
+  html #conocenos h2 {
+    font-size: 1rem; }
+  html .botonera {
+    visibility: hidden; } }
