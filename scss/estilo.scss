@@ -170,31 +170,22 @@ footer {
     color: #7c189d;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 365px) {
     html {
         body {
             margin: 0;
             padding: 0;
             .botonera {
-                visibility: hidden;
+                display:none;
             }
-            .logo {
-                width: 80%;
+            img {
+                margin: 1em 0 1em 0;
             }
             .whatsappLaTaquizaDeliver {
-                i {
-                    a {
-                        img {
-                            width: 4rem;
-                        }
-                    }
-                }
+                display: none;
             }
-            .card {
-                margin: 0;
-                .card-img-top {
-                    margin: 0;
-                }
+            .card-vacia {
+                display: none;
             }
         }
     }
@@ -202,24 +193,41 @@ footer {
 
 @media (max-width: 768px) {
     
-    html { 
-        h1 {
-            font-size: 2rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-        }
-        iframe {
-            width: 100%;
-        }
-        .alcance {
-            width: 80%;
-        }
-        #conocenos h2 {
-            font-size: 1rem;
-        }
-        .botonera {
-            visibility: hidden;
+    html {
+        body {
+            margin: 0;
+            padding: 0;
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            iframe {
+                width: 100%;
+            }
+            .alcance {
+                width: 80%;
+            }
+            #conocenos h2 {
+                font-size: 1rem;
+            }
+            .botonera {
+                display:none;
+            }
+            .whatsappLaTaquizaDeliver {
+                display: none;
+            }
+        } 
+    }
+}
+
+@media (max-width: 946px) {
+    html {
+        body {
+            .botonera {
+                display:none;
+            }
         }
     }
 }

@@ -114,31 +114,38 @@ footer {
 .card-title {
   color: #7c189d; }
 
-@media (max-width: 360px) {
+@media (max-width: 365px) {
   html body {
     margin: 0;
     padding: 0; }
     html body .botonera {
-      visibility: hidden; }
-    html body .logo {
-      width: 80%; }
-    html body .whatsappLaTaquizaDeliver i a img {
-      width: 4rem; }
-    html body .card {
-      margin: 0; }
-      html body .card .card-img-top {
-        margin: 0; } }
+      display: none; }
+    html body img {
+      margin: 1em 0 1em 0; }
+    html body .whatsappLaTaquizaDeliver {
+      display: none; }
+    html body .card-vacia {
+      display: none; } }
 
 @media (max-width: 768px) {
-  html h1 {
-    font-size: 2rem; }
-  html h2 {
-    font-size: 1.5rem; }
-  html iframe {
-    width: 100%; }
-  html .alcance {
-    width: 80%; }
-  html #conocenos h2 {
-    font-size: 1rem; }
-  html .botonera {
-    visibility: hidden; } }
+  html body {
+    margin: 0;
+    padding: 0; }
+    html body h1 {
+      font-size: 2rem; }
+    html body h2 {
+      font-size: 1.5rem; }
+    html body iframe {
+      width: 100%; }
+    html body .alcance {
+      width: 80%; }
+    html body #conocenos h2 {
+      font-size: 1rem; }
+    html body .botonera {
+      display: none; }
+    html body .whatsappLaTaquizaDeliver {
+      display: none; } }
+
+@media (max-width: 946px) {
+  html body .botonera {
+    display: none; } }
