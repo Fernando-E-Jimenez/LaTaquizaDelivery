@@ -144,6 +144,8 @@ footer {
     html body .botonera {
       display: none; }
     html body .whatsappLaTaquizaDeliver {
+      display: none; }
+    html body .card-vacia {
       display: none; } }
 
 @media (max-width: 946px) {
