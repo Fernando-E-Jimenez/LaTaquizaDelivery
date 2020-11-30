@@ -90,9 +90,14 @@ main {
 
 footer {
   background-color: lightgray;
-  margin: 2em 0 0 0; }
+  margin: 2em 0 0 0;
+  padding-left: 9em; }
+  footer .img-footer {
+    margin-top: 1em;
+    width: 12em; }
   footer div i a img {
-    width: 2em; }
+    padding-top: 5em;
+    width: 4em; }
 
 /* ***************** */
 /* Whatsapp API */
@@ -127,27 +132,45 @@ footer {
     html body .card-vacia {
       display: none; } }
 
-@media (max-width: 768px) {
-  html body {
+@media (max-width: 767px) {
+  html .container-fluid {
     margin: 0;
-    padding: 0; }
-    html body h1 {
-      font-size: 2rem; }
-    html body h2 {
-      font-size: 1.5rem; }
-    html body iframe {
+    padding: 0;
+    overflow: scroll; }
+    html .container-fluid h1 {
+      font-size: 2rem;
+      margin-top: 1em; }
+    html .container-fluid h2 {
+      font-size: 1.2rem; }
+    html .container-fluid iframe {
       width: 100%; }
-    html body .alcance {
+    html .container-fluid .alcance {
       width: 80%; }
-    html body #conocenos h2 {
+    html .container-fluid #conocenos h2 {
       font-size: 1rem; }
-    html body .botonera {
+    html .container-fluid .logo {
+      margin-left: 4em; }
+    html .container-fluid .botonera {
       display: none; }
-    html body .whatsappLaTaquizaDeliver {
+    html .container-fluid .whatsappLaTaquizaDeliver {
       display: none; }
-    html body .card-vacia {
-      display: none; } }
+    html .container-fluid .card-vacia {
+      display: none; }
+    html .container-fluid footer {
+      padding: 0; } }
 
 @media (max-width: 946px) {
-  html body .botonera {
-    display: none; } }
+  html .container-fluid .botonera {
+    display: none; }
+  html .container-fluid footer.row {
+    padding: 0; }
+    html .container-fluid footer.row .img-footer {
+      width: 9em; }
+  html .container-fluid .whatsappLaTaquizaDeliver {
+    display: none; }
+  html .container-fluid .logo {
+    margin-left: 13em; } }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    /* dark styles here */ } }

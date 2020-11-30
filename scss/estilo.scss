@@ -126,11 +126,17 @@ main {
 footer {
     background-color: lightgray;
     margin: 2em 0 0 0;
+    padding-left: 9em;
+    .img-footer {
+        margin-top: 1em;
+        width: 12em;
+    }
     div {
         i {
             a {
                 img {
-                    width: 2em;
+                    padding-top: 5em;
+                    width: 4em;
                 }
             }
         }
@@ -170,6 +176,8 @@ footer {
     color: #7c189d;
 }
 
+
+
 @media (max-width: 365px) {
     html {
         body {
@@ -191,17 +199,20 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
     html {
-        body {
+
+        .container-fluid {
             margin: 0;
             padding: 0;
+            overflow: scroll;
             h1 {
                 font-size: 2rem;
+                margin-top: 1em;
             }
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
             iframe {
                 width: 100%;
@@ -212,6 +223,9 @@ footer {
             #conocenos h2 {
                 font-size: 1rem;
             }
+            .logo {
+                margin-left: 4em;
+            }
             .botonera {
                 display:none;
             }
@@ -221,15 +235,30 @@ footer {
             .card-vacia {
                 display: none;
             }
+            footer {
+                padding: 0;
+            }
         } 
     }
 }
 
 @media (max-width: 946px) {
     html {
-        body {
+        .container-fluid {
             .botonera {
                 display:none;
+            }
+            footer.row {
+                padding: 0;
+                .img-footer {
+                    width: 9em;
+                } 
+            }
+            .whatsappLaTaquizaDeliver {
+                display: none;
+            }
+            .logo {
+                margin-left: 13em;
             }
         }
     }
